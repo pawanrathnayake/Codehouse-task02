@@ -9,7 +9,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  margin: 72px 231px;
 }
 
 .card {
@@ -50,11 +49,6 @@ body {
 
 .card__footer:hover {
   color: none;
-}
-
-.img {
-  width: 551px;
-  height: 320px;
 }
 
 @media (min-width: 0) {
@@ -118,6 +112,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
         flex-direction: column;
+    margin: 72px 231px;
   }
 }
 

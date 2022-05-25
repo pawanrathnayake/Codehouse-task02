@@ -13,8 +13,7 @@ body {
     background-color:$card_color;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 72px 231px;
-  
+
 }
 
 .card {
@@ -58,7 +57,3 @@ body {
     }
 }
 
-.img {
-    width: 551px;
-    height: 320px;
-  }
