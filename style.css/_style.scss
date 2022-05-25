@@ -1,0 +1,64 @@
+$background_color: #faf9f5;
+$card_color:#faf9f5;
+$font_color: #261A42;
+$des_color:#333333;
+
+
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background: $background_color;
+  }
+
+.block {
+    background-color:$card_color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 72px 231px;
+  
+}
+
+.card {
+    text-align: left;
+    margin: 100px 0px;
+
+    &__title {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 10px;
+        height: 46px;
+       }
+
+    &__content {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    &__desc {
+        font-size: 13px;
+        color:$des_color;
+        font-family: none;
+        width: 342px;
+        line-height: 22px;
+        font-weight: 400;
+        letter-spacing: -1.5%;
+
+    }
+
+    &__footer {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 20px;
+        margin: 10px;
+        color: $font_color;
+
+        &:hover {
+            color: none;
+        }
+    }
+}
+
+.img {
+    width: 551px;
+    height: 320px;
+  }

@@ -1,0 +1,104 @@
+$breakpoints: (
+    "xs": 0,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl":1200px
+);
+
+@mixin xs {
+    @media (min-width: map-get($breakpoints,"xs")) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: map-get($breakpoints,"sm")) {
+        @content;
+    }
+    
+}
+
+@mixin  md {
+    @media (min-width: map-get($breakpoints,"md")) {
+        @content;
+    }
+    
+}
+
+@mixin lg {
+    @media  (min-width: map-get($breakpoints,"lg")) {
+        @content;
+        
+    }
+}
+
+@mixin xl {
+    @media (min-width: map-get($breakpoints,"xl")) {
+        @content;
+        
+    }
+    
+}
+@mixin breakpoint($bp: 0) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+.block {
+    @include xs {
+        min-width: none;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    @include sm {
+        min-width: none;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    @include md {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction:column;
+
+    }
+
+    @include lg {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+
+    }
+    
+    @include xl {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+
+    }
+    @include breakpoint(1200px) {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.img {
+    @include xs {
+        background-color: #1b8dad;
+        background-size: cover;
+        width: 343px;
+        height: 172px;
+        margin: 59px 16px 46px;
+        overflow: visible;
+    }
+
+  }
